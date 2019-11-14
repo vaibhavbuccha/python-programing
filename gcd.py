@@ -2,7 +2,9 @@
 GCD -> Greatest Common Intiger
 '''
 
-def gcd(m,n):
+# first way to create gcd program 
+
+def gcd1(m,n):
 	if m == 0 or n == 0 :
 		print 'values must be greater than 0'
 	else:	
@@ -29,4 +31,22 @@ def gcd(m,n):
 					cn.append(f)
 		print "GCD of", m," and ",n ,"is", cn[-1]
 
-gcd(5,10)
+
+
+# 2 . way to create gcd program using recursive while loop.
+
+def gcd2(n,m):
+	i=1
+	cn = []
+	while i<min(n,m)+1:
+		if m%i == 0 & n%i == 0:
+			cn.append(i)
+		i= i+1
+	print "GCD of", m," and ",n ,"is", cn[-1]
+
+
+n = int(input( 'Enter the First no : '))
+m = int(input( 'Enter the second no : '))
+gcd2(n,m)
+
+
