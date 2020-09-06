@@ -33,3 +33,5 @@ details = (name='vaibhav', course='python', course2='Django')
 - It make Things easy we don't have get the index we can get value directly from the name.
 > _make() :- This function is used to return a namedtuple() from the iterable passed as argument
 
+## Deque()
+> deque() pronounced as 'deck' is an optimised list to perform insertion and deleteion easily.
