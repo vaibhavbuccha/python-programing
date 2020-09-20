@@ -1,0 +1,88 @@
+# variables in python
+
+## common variables datatypes are
+- integer  => ```12```
+- float    => ```12.00```
+- boolean  => ```True/1 , False/0```
+- string   => ```'vaibhav'```
+- complex  => ```10+j```
+
+### String
+> string in python are immutable means we can't change the value once we assign in a variable.
+```py
+name = "vaibhav jain"
+# we assign value in name variable if we want to change the value of any index than python won't allow us to do that for example
+name[0:3] = abc  # this code give error
+```
+> string in python represented as object means we can use indexing in string.
+```py
+name = "vaibhav"
+name[0] # -> v
+name[0:3]  # -> vai
+name[:4]  # -> vaib
+name[-1] # -> v
+len(name) # 7
+```
+> *Note:-* Len() is use words of the string.
+
+### List
+> List in Python is special datatype which helps in holding multiple data in single variable. 
+```py
+nums = [1,2,34,5,6]
+```
+> List values are accessible using indexing similar as string.
+```py
+nums = [1,2,34,5,6]
+print(nums[-1]) # 6
+print(nums[-3]) # 34
+print(nums[2:]) # 5,6
+```
+> List is mutable datatype therefor we can change the value of any index of the string.
+```py
+nums = [1,2,34,5,6]
+nums[0] = 5
+print(nums) # [5,2,34,5,6]
+```
+> List contains can take any type of data. it is not required to put similar datatypes.
+```py
+nums = ["vaibhav" , 8, "jain", True, 19.89]
+```
+> Len() is used for count length of the list
+```py
+nums = [1,2,3,45,6]
+print(len(nums)) # 5
+```
+> Only Addition is allowed between 2 Lists.
+```py
+nums1 = [1,2,3]
+nums2 = [1,2,3]
+print(num1+num2) # [1,2,3,1,2,3]
+```
+> There are n number of function we can perform with list which is predefined in python some of them are ```insert , append, remove, clear``` etc.
+
+1. _**append :-**_ take on parameter as a value and append at the end of list
+```py
+nums1 = [1,2,3,45,5,45]
+nums1.append(22)
+print(nums1) #[1, 2, 3, 45, 5, 45, 22]
+```
+
+2. _**clear :-**_ Clear all elements of the list
+```py
+nums1 = [1,2,3,45,5,45]
+nums1.clear()
+print(nums1) #[]
+```
+
+3. _**copy :-**_ return copy of the list.
+```py
+nums1 = [1,2,3,45,5,45]
+print(nums1.copy()) #[1, 2, 3, 45, 5, 45]
+```
+
+4. _**count :-**_ take one value as param and return count of its presence.
+```py
+nums1 = [1,2,3,45,5,45]
+print(nums1.count(45)) #2
+```
+
