@@ -86,3 +86,31 @@ nums1 = [1,2,3,45,5,45]
 print(nums1.count(45)) #2
 ```
 
+5. _**index :-**_ Index takes value as argument and return its index
+```py
+nums1 = [1,2,3,45,5,45]
+print(index(45)) # 3 always return 1st presence.
+```
+
+6. _**pop :-**_ pop takes an index as argument and remove it from list.
+```py
+num1 = [1,2,3,45,6,7]
+num1.pop(2)
+print(num1) # [1,2,45,6,7]
+```
+
+7. _**remove :-**_ remove takes value as argument and remove it from list.
+```py
+num1 = [1,2,34,56,5]
+num1.remove(1)
+print(num1) # [2,34,56,5]
+```
+
+8. _**sort :-**_ Sort list in assending/descending order.
+```py
+nums1.sort()
+print(nums1)
+
+# we can also extend sort in many ways
+#  sort accept 2 params sort(reverse=True, key=myFunc)
+```
