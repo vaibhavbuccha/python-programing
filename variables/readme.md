@@ -6,8 +6,9 @@
 - boolean  => ```True/1 , False/0```
 - string   => ```'vaibhav'```
 - complex  => ```10+j```
-
-### String
+---
+## String
+---
 > string in python are immutable means we can't change the value once we assign in a variable.
 ```py
 name = "vaibhav jain"
@@ -24,8 +25,9 @@ name[-1] # -> v
 len(name) # 7
 ```
 > *Note:-* Len() is use words of the string.
-
-### List
+---
+## List
+---
 > List in Python is special datatype which helps in holding multiple data in single variable. 
 ```py
 nums = [1,2,34,5,6]
@@ -114,3 +116,27 @@ print(nums1)
 # we can also extend sort in many ways
 #  sort accept 2 params sort(reverse=True, key=myFunc)
 ```
+---
+## Tuples
+---
+> Tuples is also a special datatype in python which is quite similar like list but it is written in paranthesis ```()``` 
+```py
+tup = (1,2,34,5)
+```
+
+> Tuples are immutable means we can't change the value of the tuple.
+
+> Tuple supports only 2 functions 
+
+1. _**index :-**_ Index takes value as argument and return its index
+```py
+nums1 = (1,2,3,45,5,45)
+print(index(45)) # 3 always return 1st presence.
+```
+2. _**count :-**_ take one value as param and return count of its presence.
+```py
+nums1 = (1,2,3,45,5,45)
+print(nums1.count(45)) #2
+```
+> **ADVANTAGE OF TUPLE :~** Itration of tuple is faster than list.
+
