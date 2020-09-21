@@ -140,3 +140,16 @@ print(nums1.count(45)) #2
 ```
 > **ADVANTAGE OF TUPLE :~** Itration of tuple is faster than list.
 
+---
+## Sets
+---
+> Sets are another special datatype in python use for store multiple values. sets are initialise in ```{}```.
+```py
+s = {1,24,56,78}
+```
+
+> Sets don't contain any sequence so they are not accessible by index or they won't contain index.
+
+> sets are work on hash so they process faster than list.
+
+> sets doesn't contain duplicate values.
